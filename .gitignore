@@ -1,0 +1,10 @@
+modem.img
+recovery.img
+system/system/app/NextAppCore/lib/arm64/libnd4jcpu.so
+system/system/priv-app/AsusSettings/AsusSettings.apk
+system/system/priv-app/YandexApp/YandexApp.apk
+system/system/priv-app/YandexBrowser/YandexBrowser.apk
+system_ext/apex/com.android.vndk.v30.apex
+product/app/WebViewGoogle/WebViewGoogle.apk
+product/priv-app/GmsCore/GmsCore.apk
+product/priv-app/Velvet/Velvet.apk
