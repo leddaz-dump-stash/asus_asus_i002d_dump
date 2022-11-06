@@ -1,0 +1,7 @@
+#!/system/bin/sh
+
+LOG_TAG="SLM"
+SLS_IFACE=`getprop vendor.sla.sls_change_iface`
+
+log -p d -t "$LOG_TAG" "SLS switches interface to" "$SLS_IFACE"
+settings put global sls_current_iface $SLS_IFACE

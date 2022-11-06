@@ -1,0 +1,16 @@
+
+on property:vendor.factory.adbon=1
+    copy /vendor/etc/adbkey.pub /data/misc/adb/adb_keys
+    chown system shell /data/misc/adb/adb_keys
+    chmod 0640 /data/misc/adb/adb_keys
+    
+on property:vendor.asus.autofota=1
+    setprop vendor.asus.disable_vibrator 2
+    start asus_osinfo
+    setprop vendor.asus.autofota 2
+
+on property:persist.sys.enableDevPerfTHM=*
+	setprop vendor.sys.enableDevPerfTHM ${persist.sys.enableDevPerfTHM}
+
+on property:persist.vendor.asus.foregroundapp=*
+	setprop vendor.asus.foregroundapp ${persist.vendor.asus.foregroundapp}
